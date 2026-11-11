@@ -85,4 +85,4 @@ GitHub `main` 브랜치에 push하면 Vercel이 자동으로 다시 배포합니
 
 ---
 
-© 2026 Hong Gil-dong. All rights reserved.
+© 2026 Park Suyeon. All rights reserved.

@@ -18,16 +18,18 @@ window.addEventListener("scroll", () => {
   nav.classList.toggle("is-scrolled", window.scrollY > 40);
 }, { passive: true });
 
-navToggle.addEventListener("click", () => {
-  navToggle.classList.toggle("is-open");
-  navLinks.classList.toggle("is-open");
+const setMenu = (open) => {
+  navToggle.classList.toggle("is-open", open);
+  navLinks.classList.toggle("is-open", open);
+  document.body.classList.toggle("menu-open", open);
+  navToggle.setAttribute("aria-label", open ? "메뉴 닫기" : "메뉴 열기");
+  navToggle.setAttribute("aria-expanded", String(open));
+};
+navToggle.addEventListener("click", () => setMenu(!navLinks.classList.contains("is-open")));
+navLinks.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setMenu(false)));
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 760) setMenu(false);
 });
-navLinks.querySelectorAll("a").forEach((a) =>
-  a.addEventListener("click", () => {
-    navToggle.classList.remove("is-open");
-    navLinks.classList.remove("is-open");
-  })
-);
 
 // ---------- Reveal on scroll ----------
 const revealObserver = new IntersectionObserver((entries) => {

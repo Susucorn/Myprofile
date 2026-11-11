@@ -124,14 +124,26 @@ strong { color: var(--text); font-weight: 600; }
   transition: padding 0.4s var(--ease), background 0.4s var(--ease), border-color 0.4s;
   border-bottom: 1px solid transparent;
 }
-.nav.is-scrolled {
-  padding-top: 16px;
-  padding-bottom: 16px;
+/* 블러 배경은 가상 요소에 둔다: .nav 자체에 backdrop-filter를 주면
+   모바일 메뉴(position: fixed)가 화면이 아닌 헤더 기준으로 잡혀 깨진다 */
+.nav::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
   background: rgba(13, 13, 15, 0.82);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
+  opacity: 0;
+  transition: opacity 0.4s var(--ease);
+  pointer-events: none;
+}
+.nav.is-scrolled {
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-color: var(--line);
 }
+.nav.is-scrolled::before { opacity: 1; }
 .nav__logo {
   font-family: var(--serif-en);
   font-size: 26px;
@@ -596,6 +608,8 @@ strong { color: var(--text); font-weight: 600; }
   .nav__links {
     position: fixed;
     inset: 0;
+    height: 100vh;
+    height: 100dvh;
     z-index: -1;
     flex-direction: column;
     align-items: center;
@@ -607,6 +621,7 @@ strong { color: var(--text); font-weight: 600; }
     transition: opacity 0.4s var(--ease);
   }
   .nav__links.is-open { opacity: 1; pointer-events: auto; }
+  body.menu-open { overflow: hidden; }
   .nav__links a { font-family: var(--serif-en); font-size: 32px; letter-spacing: 0; color: var(--text); }
 
   .skills { grid-template-columns: 1fr; }

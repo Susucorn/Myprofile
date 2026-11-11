@@ -42,7 +42,7 @@
           <span class="serif-en italic">with clarity</span><span class="gold">.</span>
         </h1>
         <p class="hero__lead">
-          안녕하세요, 문제를 <strong>구조로 풀어내는</strong> 개발자 <strong>홍길동</strong>입니다.<br />
+          안녕하세요, 문제를 <strong>구조로 풀어내는</strong> 개발자 <strong>박수연</strong>입니다.<br />
           사용자의 불편을 코드로 해결하고, 팀이 함께 읽기 좋은 소프트웨어를 만듭니다.
         </p>
         <div class="hero__meta">
@@ -100,8 +100,8 @@
           </p>
 
           <ul class="stats">
-            <li><strong data-count="6">0</strong><span>Projects</span></li>
-            <li><strong data-count="4">0</strong><span>Team Projects</span></li>
+            <li><strong data-count="5">0</strong><span>Projects</span></li>
+            <li><strong data-count="2">0</strong><span>Solo Built</span></li>
             <li><strong data-count="300" data-suffix="+">0</strong><span>Algorithm Solved</span></li>
             <li><strong data-count="4.1" data-decimal="1">0</strong><span>GPA / 4.5</span></li>
           </ul>
@@ -172,22 +172,20 @@
           <div class="project__index">01</div>
           <div class="project__main">
             <div class="project__top">
-              <span class="project__type">Team · 4명 · Backend Lead</span>
-              <span class="project__date">2026.03 — 2026.06</span>
+              <span class="project__type">Team Project · IoT</span>
+              <span class="project__date">2023.03 — 2023.06</span>
             </div>
-            <h3 class="project__title">StudyMate — 캠퍼스 스터디 매칭 플랫폼</h3>
+            <h3 class="project__title">Smart Speed Control System</h3>
             <p class="project__desc">
-              관심 과목과 시간표를 기반으로 스터디원을 추천하는 웹 서비스입니다.
-              매칭 알고리즘과 실시간 채팅 기능을 담당했습니다.
+              어린이보호구역 접근 여부와 표지판 인식 결과를 바탕으로 RC카의 속도를 자동으로 제어하는 IoT 프로젝트에 참여했습니다.
             </p>
             <ul class="project__points">
-              <li>Spring Boot + JPA로 REST API 30여 개 설계 및 구현</li>
-              <li>Redis 캐싱으로 추천 API 응답 속도 <strong>약 60% 개선</strong></li>
-              <li>WebSocket(STOMP) 기반 실시간 채팅 구현</li>
-              <li>GitHub Actions + Docker로 AWS EC2 자동 배포</li>
+              <li><strong>YOLOv5</strong> 객체 인식 모델로 교통 표지판 인식</li>
+              <li>Raspberry Pi와 Arduino를 연동해 인식 결과에 따라 RC카 속도 제어</li>
+              <li>Android Studio(Java) 앱과 <strong>Firebase</strong>로 차량 상태 데이터 연동</li>
             </ul>
             <div class="project__foot">
-              <ul class="tags tags--sm"><li>Spring Boot</li><li>MySQL</li><li>Redis</li><li>Docker</li><li>AWS</li></ul>
+              <ul class="tags tags--sm"><li>Java</li><li>Android Studio</li><li>Arduino</li><li>Raspberry Pi</li><li>YOLOv5</li><li>Firebase</li></ul>
               <div class="project__links">
                 <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
               </div>
@@ -199,24 +197,22 @@
           <div class="project__index">02</div>
           <div class="project__main">
             <div class="project__top">
-              <span class="project__type">Team · 3명 · Full-stack</span>
-              <span class="project__date">2025.09 — 2025.12</span>
+              <span class="project__type">Personal · 단독 개발</span>
+              <span class="project__date">2026.09 — 2026.10</span>
             </div>
-            <h3 class="project__title">EcoTrack — 탄소 발자국 기록 웹앱</h3>
+            <h3 class="project__title">DropSpot — 주변 쓰레기통 &amp; 분리배출 안내</h3>
             <p class="project__desc">
-              일상 활동을 기록하면 탄소 배출량을 시각화해 주는 서비스입니다.
-              프론트엔드와 백엔드 API 연동 전반을 맡았습니다.
+              공공데이터와 카카오맵 API를 활용해 내 주변 쓰레기통 위치와 분리배출 정보를 제공하는 웹 서비스를 혼자 개발했습니다.
             </p>
             <ul class="project__points">
-              <li>React + Chart.js로 주간·월간 통계 대시보드 구현</li>
-              <li>Node.js / Express로 JWT 인증 및 사용자 API 개발</li>
-              <li>교내 SW 프로젝트 경진대회 <strong>우수상</strong> 수상</li>
+              <li><strong>Kakao Map API</strong>로 사용자 위치 기준 주변 쓰레기통을 지도에 표시</li>
+              <li>공공데이터를 가공해 품목별 분리배출 정보 제공</li>
+              <li>React 프론트엔드와 Node.js / Express API 서버, <strong>Supabase</strong> DB를 직접 설계·구현</li>
             </ul>
             <div class="project__foot">
-              <ul class="tags tags--sm"><li>React</li><li>Node.js</li><li>Express</li><li>MongoDB</li></ul>
+              <ul class="tags tags--sm"><li>React</li><li>Node.js</li><li>Express</li><li>Supabase</li><li>Kakao Map API</li></ul>
               <div class="project__links">
-                <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
-                <a href="#" target="_blank" rel="noopener">Demo ↗</a>
+                <a href="https://dropspot-woad.vercel.app" target="_blank" rel="noopener">Live Demo ↗</a>
               </div>
             </div>
           </div>
@@ -226,20 +222,69 @@
           <div class="project__index">03</div>
           <div class="project__main">
             <div class="project__top">
-              <span class="project__type">Personal · 1명</span>
-              <span class="project__date">2025.06 — 2025.08</span>
+              <span class="project__type">Personal · 단독 개발</span>
+              <span class="project__date">2026.10 — 2026.11</span>
             </div>
-            <h3 class="project__title">MiniOS Scheduler Simulator</h3>
+            <h3 class="project__title">오늘의 안심식단 — 영양·알레르기 기반 식단 관리</h3>
             <p class="project__desc">
-              운영체제 수업 내용을 바탕으로 CPU 스케줄링 알고리즘을 시각적으로 비교하는 시뮬레이터입니다.
+              공공데이터의 영양성분과 알레르기 정보를 활용해 안전한 식단을 관리할 수 있는 웹 애플리케이션을 혼자 개발했습니다.
             </p>
             <ul class="project__points">
-              <li>FCFS, SJF, RR, MLFQ 등 6가지 알고리즘 구현</li>
-              <li>간트 차트와 평균 대기·반환 시간 비교 시각화</li>
-              <li>단위 테스트 커버리지 <strong>85%</strong> 달성</li>
+              <li>공공 API로 받은 식품 영양성분과 알레르기 정보를 조회하고 식단 관리에 활용</li>
+              <li><strong>Vercel Serverless Functions</strong>로 API 요청을 서버 쪽에서 처리해 API 키 노출 방지</li>
+              <li>React + Vite 기반 SPA로 구현하고 Vercel에 배포</li>
             </ul>
             <div class="project__foot">
-              <ul class="tags tags--sm"><li>Python</li><li>PyQt</li><li>pytest</li></ul>
+              <ul class="tags tags--sm"><li>React</li><li>Vite</li><li>Vercel Serverless</li><li>Public API</li></ul>
+              <div class="project__links">
+                <a href="https://anshim-diet.vercel.app" target="_blank" rel="noopener">Live Demo ↗</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__index">04</div>
+          <div class="project__main">
+            <div class="project__top">
+              <span class="project__type">Mobile App</span>
+              <span class="project__date">2026.03 — 2026.06</span>
+            </div>
+            <h3 class="project__title">Storoo — 링크·메모·사진 통합 저장 앱</h3>
+            <p class="project__desc">
+              흩어져 있는 링크, 메모, 사진, 스크린샷을 한곳에 저장하고 검색할 수 있는 모바일 애플리케이션을 개발했습니다.
+            </p>
+            <ul class="project__points">
+              <li>Flutter / Dart로 여러 형태의 콘텐츠를 통합 관리하는 UI 구현</li>
+              <li><strong>Isar DB</strong> 로컬 데이터베이스로 저장한 콘텐츠를 빠르게 검색</li>
+              <li>GitHub로 버전 관리 및 협업</li>
+            </ul>
+            <div class="project__foot">
+              <ul class="tags tags--sm"><li>Flutter</li><li>Dart</li><li>Isar DB</li><li>GitHub</li></ul>
+              <div class="project__links">
+                <a href="https://github.com/Team-Storoo/storoo_client" target="_blank" rel="noopener">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <div class="project__index">05</div>
+          <div class="project__main">
+            <div class="project__top">
+              <span class="project__type">Web Service</span>
+              <span class="project__date">2025.09 — 2025.12</span>
+            </div>
+            <h3 class="project__title">CertHub — 자격증·시험 정보 검색 서비스</h3>
+            <p class="project__desc">
+              공공데이터 API를 활용해 자격증과 시험 정보를 검색하고 조회할 수 있는 웹 서비스를 개발했습니다.
+            </p>
+            <ul class="project__points">
+              <li>공공데이터 API로 받은 자격증·시험 일정 데이터를 가공해 화면에 표시</li>
+              <li>프레임워크 없이 HTML / CSS / JavaScript로 검색·조회 기능 구현</li>
+            </ul>
+            <div class="project__foot">
+              <ul class="tags tags--sm"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>공공데이터 API</li></ul>
               <div class="project__links">
                 <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
               </div>
@@ -259,38 +304,52 @@
 
       <ol class="timeline">
         <li class="reveal">
-          <span class="timeline__date">2024 — Present</span>
+          <span class="timeline__date">2023.03 — Present</span>
           <div>
-            <h3>○○대학교 컴퓨터공학과</h3>
-            <p>학사 과정 3학년 재학 · 전공 GPA 4.1 / 4.5</p>
+            <h3>신라대학교 컴퓨터공학과</h3>
+            <p>컴퓨터공학전공 학사과정 3학년 재학 (23학번)</p>
           </div>
         </li>
         <li class="reveal">
-          <span class="timeline__date">2026.07 — 2026.08</span>
+          <span class="timeline__date">2023.03 — Present</span>
           <div>
-            <h3>○○테크 · 하계 SW 인턴</h3>
-            <p>사내 관리자 페이지 API 리팩터링 및 테스트 코드 작성</p>
+            <h3>학과 동아리 인앤아웃 (In&amp;Out)</h3>
+            <p>1학년 때부터 활동하며 한 학기에 프로젝트 1개씩 기획·개발</p>
           </div>
         </li>
         <li class="reveal">
-          <span class="timeline__date">2025 — Present</span>
+          <span class="timeline__date">2026.10 — 2026.11</span>
           <div>
-            <h3>교내 개발 동아리 ○○ · 운영진</h3>
-            <p>알고리즘 스터디 운영, 신입 부원 대상 Git 협업 세미나 진행</p>
+            <h3>오늘의 안심식단</h3>
+            <p>공공데이터 기반 영양성분·알레르기 분석 식단 관리 웹앱 개발</p>
           </div>
         </li>
         <li class="reveal">
-          <span class="timeline__date">2025.11</span>
+          <span class="timeline__date">2026.09 — 2026.10</span>
           <div>
-            <h3>교내 SW 프로젝트 경진대회 · 우수상</h3>
-            <p>EcoTrack 프로젝트로 수상</p>
+            <h3>DropSpot</h3>
+            <p>공공데이터와 지도 API를 활용한 쓰레기통 위치 및 분리배출 정보 제공 웹 서비스 개발</p>
           </div>
         </li>
         <li class="reveal">
-          <span class="timeline__date">Certificates</span>
+          <span class="timeline__date">2026.03 — 2026.06</span>
           <div>
-            <h3>정보처리기사 (필기) · SQLD · TOEIC 870</h3>
-            <p>CS 기초와 데이터베이스 역량을 객관적으로 증명하기 위해 취득</p>
+            <h3>Storoo</h3>
+            <p>Flutter 기반 통합 콘텐츠 저장·관리 모바일 앱 개발</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="timeline__date">2025.09 — 2025.12</span>
+          <div>
+            <h3>CertHub</h3>
+            <p>공공데이터 API 기반 자격증 정보 조회 웹 서비스 개발</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="timeline__date">2023.03 — 2023.06</span>
+          <div>
+            <h3>Smart Speed Control System</h3>
+            <p>IoT 기반 어린이보호구역 차량 속도 자동 제어 시스템 개발 참여</p>
           </div>
         </li>
       </ol>
@@ -301,27 +360,26 @@
       <div class="contact__inner reveal">
         <p class="eyebrow">05 · Contact</p>
         <h2 class="contact__title">
-          <span class="serif-en">Let’s build something</span><br />
-          <span class="serif-en italic">meaningful</span><span class="gold">.</span>
+          <span class="serif-en">Always learning,</span><br />
+          <span class="serif-en italic">always growing</span><span class="gold">.</span>
         </h2>
-        <p class="contact__lead">함께 성장할 팀을 찾고 있습니다. 편하게 연락 주세요.</p>
+        <p class="contact__lead">
+          어제보다 한 걸음 더 나아가는 개발자가 되고 싶습니다.<br />
+          배움을 멈추지 않고, 그 배움을 팀과 함께 나누겠습니다.
+        </p>
 
         <div class="contact__list">
           <a href="mailto:your.email@example.com" class="contact__item">
             <span class="label">Email</span>
-            <span>your.email@example.com</span>
+            <span>bagsuyeon033@gmail.com</span>
           </a>
-          <a href="https://github.com/your-id" target="_blank" rel="noopener" class="contact__item">
+          <a href="https://github.com/Susucorn" target="_blank" rel="noopener" class="contact__item">
             <span class="label">GitHub</span>
-            <span>github.com/your-id</span>
+            <span>https://github.com/Susucorn</span>
           </a>
-          <a href="https://your-blog.tistory.com" target="_blank" rel="noopener" class="contact__item">
-            <span class="label">Blog</span>
-            <span>your-blog.tistory.com</span>
-          </a>
-          <a href="tel:010-0000-0000" class="contact__item">
+          <a href="tel:010-3576-2301" class="contact__item">
             <span class="label">Phone</span>
-            <span>010-0000-0000</span>
+            <span>010-3576-2301</span>
           </a>
         </div>
       </div>
@@ -330,7 +388,7 @@
   </main>
 
   <footer class="footer">
-    <span>© 2026 Hong Gil-dong</span>
+    <span>© 2026 Park Su-Yeon</span>
     <a href="#top">Back to top ↑</a>
   </footer>
 

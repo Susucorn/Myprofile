@@ -3,7 +3,7 @@
 컴퓨터공학과 3학년 SW 개발자 지원자의 개인 포트폴리오 웹사이트입니다.
 경험과 직무 역량을 한 페이지에 담았습니다.
 
-🔗 **Live**: https://your-portfolio.vercel.app <!-- 배포 후 실제 주소로 바꿔 주세요 -->
+🔗 **Live**: https://myprofile-nine-ruby.vercel.app
 
 <br />
 
@@ -62,7 +62,7 @@ Myprofile/
 
 ```bash
 # 저장소 받기
-git clone https://github.com/your-id/portfolio.git
+git clone https://github.com/Susucorn/Myprofile.git
 
 # index.html 을 브라우저로 열거나, 로컬 서버로 실행
 npx serve .

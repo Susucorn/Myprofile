@@ -534,7 +534,7 @@ strong { color: var(--text); font-weight: 600; }
 .contact__lead { color: var(--text-dim); margin-bottom: 56px; }
 .contact__list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   border-top: 1px solid var(--line);
   border-left: 1px solid var(--line);
   text-align: left;
